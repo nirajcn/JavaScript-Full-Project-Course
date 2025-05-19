@@ -1,3 +1,7 @@
+
+// This is variables  
+
+
 const accountId = 344465;
 var Name = "Niraj";
 var accountEmail = "nirajcn07@gmail.com"
