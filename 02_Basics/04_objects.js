@@ -33,27 +33,27 @@ const obj3 = { ...obj1, ...obj2, ...obj4 }
 // console.log(obj3);
 
 const users = [
-{
+    {
 
- id: 1,
- email: "nk23@gmail.com"
+        id: 1,
+        email: "nk23@gmail.com"
     },
-{
+    {
 
         id: 2,
         email: "nk28653@gmail.com"
     },
-{
+    {
 
         id: 3,
         email: "nk2863@gmail.com"
     },
-{
+    {
 
         id: 4,
         email: "nk2773@gmail.com"
     },
-{
+    {
 
         id: 5,
         email: "nk253@gmail.com"
@@ -61,14 +61,32 @@ const users = [
 ]
 users[1].email
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
 
-console.log(tinderUser.hasOwnProperty('isLogged'));
+// console.log(tinderUser.hasOwnProperty('isLogged'));
 
+const course = {
+    coursename: "Js In Hindi",
+    price: "999",
+    courseInstructor: "Niraj"
 
+}
 
+// console.log(course.coursename);
+const {coursename} = course;
+const {price} = course;
+const {courseInstructor} = course;
+const {courseInstructor: instructor} = course;
 
+console.log(coursename);
+
+// {
+//     "name": "niraj",
+//     "course": "JS In Hindi",     this is JSON File
+//     "Price": "free"
+
+// }
