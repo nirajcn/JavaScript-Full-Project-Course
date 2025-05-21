@@ -50,4 +50,40 @@ function loggInUserMsg(username) {
 
 
 
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+
+function calculateCartPrice(...num1){
+
+    return num1
+}
+
+console.log(calculateCartPrice(200, 400, 500, 3000, 4000));
+
+
+const user = {
+
+    username: "niraj",
+    price: 199
+}
+function handleObject(anyObject){
+            console.log(`username is ${anyObject.username} and price is ${anyObject.price}`);
+            
+}
+
+// handleObject(user)
+
+handleObject ({
+    username: "niraj",
+    price: 399
+})
+
+const myNewarray = [200, 300, 400, 500]
+
+    function returnSecondValue(getArray){
+
+        return getArray[1]
+    }
+
+    console.log(returnSecondValue(myNewarray) );
+    
