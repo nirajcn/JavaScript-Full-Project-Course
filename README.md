@@ -1,2 +1,2 @@
-# js-hindi-Javascript
-JavaScript Series Chai aur Code
+# JavaScript Full Course With Project
+//JavaScript Full Course 
