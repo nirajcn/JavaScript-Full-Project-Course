@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Number</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+
+        }
+        body{
+            background-color: #ccc;
+        }
+
+        .main {
+            width: 400px;
+            height: 600px;
+            background-color: white;
+            border-radius: 15px;
+           
+            margin: 0 auto;
+            margin-top: 15px;
+
+            ;
+
+
+        }
+        .form{
+            text-align: center;
+            padding-top: 60px;
+
+        }
+        h2{
+            padding-bottom: 30px;
+            text-decoration: underline;
+            color: #474343;
+        }
+
+        button{
+            background-color: green;
+            color: #ccc;
+            width: 90px;
+            height: 30px
+    
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="form">
+            <h2>Even Check</h2>
+            <input type="number" id="rangeInput" placeholder="Enter a number"> <br>
+            <button onclick="printEvenNumbers()">Click Here  </button>
+
+             <ul id="resultList"></ul>
+        </div>
+
+    </div>
+
+
+     <script>
+    function printEvenNumbers() {
+      const range = parseInt(document.getElementById("rangeInput").value);
+      const resultList = document.getElementById("resultList");
+      resultList.innerHTML = ""; // clear previous
+
+      for (let i = 1; i <= range; i++) {
+        if (i % 2 === 0) {
+          const li = document.createElement("li");
+          li.innerText = i;
+          resultList.appendChild(li);
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
