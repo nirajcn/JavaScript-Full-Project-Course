@@ -3,7 +3,7 @@
 
 (function chai(){
         console.log(`DB CONNECTED`);
-})();
+})();  // semicolon ';' Require here for next like this function
 
 
 (  (name) => {
