@@ -1,0 +1,37 @@
+<!-- number-analyzer.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number Analyzer</title>
+</head>
+
+<body>
+
+    <h2>Number Analyzer</h2>
+    <input type="number" id="numInput" placeholder="Enter a number">
+    <button onclick="analyzeNumber()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function analyzeNumber() {
+            const num = parseInt(document.getElementById("numInput").value);
+            const result = document.getElementById("result");
+
+            if (num > 0) {
+                result.innerText = "The number is Positive.";
+            } else if (num < 0) {
+                result.innerText = "The number is Negative.";
+            } else if (num === 0) {
+                result.innerText = "The number is Zero.";
+            } else {
+                result.innerText = "Please enter a valid number.";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
