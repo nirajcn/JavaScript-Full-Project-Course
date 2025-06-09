@@ -17,12 +17,14 @@
 
 // Maps
 
-const map = new Map()
+const map = new Map()  // in this values is unique
 map.set('IN', "India")
 map.set('USA', "United State America")
 map.set('Jp', "Japan")
 map.set('Fr', "France")
 map.set('IN', "India")
+
+
 // console.log(map);
 
 // for (const key of map ) {
@@ -31,7 +33,7 @@ map.set('IN', "India")
 // }
 
 for (const [key, value] of map) {
-    // console.log(key, ':-', value);
+    console.log(key, ':-', value);
 
 }
 
